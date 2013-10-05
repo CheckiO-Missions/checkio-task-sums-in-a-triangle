@@ -77,41 +77,53 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             }
             //Dont change the code before it
 
-            //Your code here about test explanation animation
-            //$content.find(".explanation").html("Something text for example");
-            //
-            //
-            //
-            //
-            //
+            var canvas = new SumInTriangleCanvas(checkioInput, explanation);
+            canvas.createCanvas($content.find(".explanation")[0]);
 
 
             this_e.setAnimationHeight($content.height() + 60);
 
         });
 
-       
+        function SumInTriangleCanvas(dataInput, dataExplanation){
+            var zx = 10;
+            var zy = 10;
+            var cellSize = 30;
+            var cellN = dataInput.length;
+            var fullSizeX = zx * 2 + cellSize * cellN;
+            var fullSizeY = zy * 2 + cellSize * cellN;
 
-        var colorOrange4 = "#F0801A";
-        var colorOrange3 = "#FA8F00";
-        var colorOrange2 = "#FAA600";
-        var colorOrange1 = "#FABA00";
+            var colorDark = "#294270";
+            var colorOrange = "#FABA00";
+            var colorBlue = "#8FC7ED";
+            var colorWhite = "#FFFFFF";
 
-        var colorBlue4 = "#294270";
-        var colorBlue3 = "#006CA9";
-        var colorBlue2 = "#65A1CF";
-        var colorBlue1 = "#8FC7ED";
+            var attrRect = {"stroke": colorDark, "stroke-width": 1, "fill": colorBlue};
+            var attrRectPath = {"stroke": colorDark, "stroke-width": 1, "fill": colorOrange};
+            var attrText = {"stroke": colorDark, "font-size": 16, "font-family": "Verdana"};
 
-        var colorGrey4 = "#737370";
-        var colorGrey3 = "#9D9E9E";
-        var colorGrey2 = "#C5C6C6";
-        var colorGrey1 = "#EBEDED";
+            var paper;
 
-        var colorWhite = "#FFFFFF";
-        //Your Additional functions or objects inside scope
-        //
-        //
-        //
+            this.createCanvas = function(dom) {
+                paper = Raphael(dom, fullSizeX, fullSizeY, 0, 0);
+                for (var i = 0; i < cellN; i++) {
+                    for (var j = 0; j <= i; j++){
+                        paper.rect(
+                            fullSizeX / 2 - (i+1) * cellSize / 2 + j * cellSize,
+                            zy + cellSize * i,
+                        cellSize, cellSize).attr(
+                               j == dataExplanation[i]? attrRectPath: attrRect);
+                        paper.text(
+                            fullSizeX / 2 - i * cellSize / 2 + j * cellSize,
+                            zy + cellSize * i + cellSize / 2,
+                            String(dataInput[i][j])).attr(attrText);
+
+                    }
+                }
+
+            }
+
+        }
 
 
     }
