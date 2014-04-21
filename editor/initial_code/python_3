@@ -1,4 +1,4 @@
-def count_gold(data):
+def count_gold(pyramid):
     """
     Return max possible sum in a path from top to bottom
     """
