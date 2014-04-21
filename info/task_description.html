@@ -1,14 +1,21 @@
 <p>
-
-    Consider a list of lists in which the first list has one integer and each consecutive list has one more integer then
-    the last. Such a list of lists would look like a triangle. You must write a program that will help Nikola and
-    Stephen look for a route down the pyramid by stepping down and to the left or to the right. Your goal is to make
-    sure this program will find the sturdiest route, that is, the route with the highest possible sum on its way down
-    the pyramid.
+    For future journeys and treasures RoboTrio should train. Stephan built special flat model of a pyramid.
+    And now robots can train speed gold running.
+    They start at the top, collect gold on each room, choose left or right path and down to the next level.
+    But Stephan need to know the maximum gold that can be collected for the one run.
 </p>
 <p>
-    <strong>Tip:</strong> Think of each step down to the left as moving to the
+    Consider a tuple of tuples in which the first tuple has one integer and
+    each consecutive tuple has one more integer then the last.
+    Such a list of lists would look like a triangle.
+    You should write a program that will help Nikola find the highest possible sum on the sturdiest route down the pyramid.
+    A routes down the pyramid by stepping down and to the left or to the right.
+
+</p>
+<p>
+    <strong>Hints:</strong> Think of each step down to the left as moving to the
     same index location or to the right as one index location higher.
+    And be careful if you want to use recursion here.
 </p>
 <p class="for_info_only" style="text-align: center">
     <img title="sum-in-triangles"
@@ -23,36 +30,36 @@
          width="380px"/>
 </p>
 
-<p><strong>Input: </strong>A list of lists. Each list contains integers.</p>
+<p><strong>Input: </strong>A tuple of tuples. Each tuple contains integers.</p>
 
-<p><strong>Output: </strong>An Integer.</p>
+<p><strong>Output: </strong>The maximum possible sum as an integer.</p>
 
 <div class="for_info_only">
     <p><strong>Example:</strong></p>
-<pre class="brush: python">checkio([
-    [1],
-    [2, 3],
-    [3, 3, 1],
-    [3, 1, 5, 4],
-    [3, 1, 3, 1, 3],
-    [2, 2, 2, 2, 2, 2],
-    [5, 6, 4, 5, 6, 4, 3]
-]) == 23
-checkio([
-    [1],
-    [2, 1],
-    [1, 2, 1],
-    [1, 2, 1, 1],
-    [1, 2, 1, 1, 1],
-    [1, 2, 1, 1, 1, 1],
-    [1, 2, 1, 1, 1, 1, 9]
-]) == 15
-assert checkio([
-    [9],
-    [2, 2],
-    [3, 3, 3],
-    [4, 4, 4, 4]
-]) == 18
+<pre class="brush: python">checkio((
+    (1),
+    (2, 3),
+    (3, 3, 1),
+    (3, 1, 5, 4),
+    (3, 1, 3, 1, 3),
+    (2, 2, 2, 2, 2, 2),
+    (5, 6, 4, 5, 6, 4, 3)
+)) == 23
+checkio((
+    (1),
+    (2, 1),
+    (1, 2, 1),
+    (1, 2, 1, 1),
+    (1, 2, 1, 1, 1),
+    (1, 2, 1, 1, 1, 1),
+    (1, 2, 1, 1, 1, 1, 9)
+)) == 15
+assert checkio((
+    (9),
+    (2, 2),
+    (3, 3, 3),
+    (4, 4, 4, 4)
+)) == 18
 </pre>
 </div>
 
@@ -60,4 +67,11 @@ assert checkio([
 <p class="for_info_only">
     <strong>How it is used: </strong>
     This is a classical problem, which shows you how to use dynamic programming.
+    This concept is using for many optimisation tasks.
+</p>
+
+<p>
+    <strong>Precondition: </strong>
+    0 < |pyramid| < 30<br>
+    &forall; tuple ∈ pyramid : &forall; x ∈ tuple;  : 0 &lt; x &lt; 100
 </p>
