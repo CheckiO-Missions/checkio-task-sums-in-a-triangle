@@ -271,32 +271,33 @@
       <path d="M864.5,168.5 L912.5,168.5 L912.5,216.5 L864.5,216.5 z" fill-opacity="0" stroke="#294270" stroke-width="1"/>
     </g>
     <g>
-      <text transform="matrix(1, 0, 0, 1, 40.094, 392.522)">
-        <tspan x="-6.206" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[</tspan>
+      <text transform="matrix(1, 0, 0, 1, 39.594, 392.522)">
+        <tspan x="-5.706" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(</tspan>
       </text>
-      <text transform="matrix(1, 0, 0, 1, 57.059, 417.522)">
-        <tspan x="-23.171" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[1],</tspan>
+      <text transform="matrix(1, 0, 0, 1, 57.059, 430.022)">
+        <tspan x="-23.171" y="-4.5" font-family="Verdana-Bold" font-size="21" fill="#294270">(1)</tspan>
+        <tspan x="-23.171" y="20.5" font-family="Verdana-Bold" font-size="21" fill="#294270">	,</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 71.907, 442.522)">
-        <tspan x="-38.019" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[2, 3],</tspan>
+        <tspan x="-38.019" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(2, 3),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 86.755, 467.522)">
-        <tspan x="-52.867" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[3, 3, 1],</tspan>
+        <tspan x="-52.867" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(3, 3, 1),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 101.602, 492.522)">
-        <tspan x="-67.714" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[3, 1, 5, 4],</tspan>
+        <tspan x="-67.714" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(3, 1, 5, 4),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 116.45, 517.522)">
-        <tspan x="-82.562" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[3, 1, 3, 1, 3],</tspan>
+        <tspan x="-82.562" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(3, 1, 3, 1, 3),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 131.298, 542.522)">
-        <tspan x="-97.41" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[2, 2, 2, 2, 2, 2],</tspan>
+        <tspan x="-97.41" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(2, 2, 2, 2, 2, 2),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 142.351, 567.522)">
-        <tspan x="-108.463" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[5, 6, 4, 5, 6, 4, 3]</tspan>
+        <tspan x="-108.463" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(5, 6, 4, 5, 6, 4, 3)</tspan>
       </text>
-      <text transform="matrix(1, 0, 0, 1, 40.094, 592.522)">
-        <tspan x="-6.206" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">]</tspan>
+      <text transform="matrix(1, 0, 0, 1, 39.594, 592.522)">
+        <tspan x="-5.706" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">)</tspan>
       </text>
     </g>
     <text transform="matrix(1, 0, 0, 1, 193.965, 49)">
@@ -468,32 +469,32 @@
       <tspan x="-7.965" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">1</tspan>
     </text>
     <g>
-      <text transform="matrix(1, 0, 0, 1, 432.206, 391)">
-        <tspan x="-6.206" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[</tspan>
+      <text transform="matrix(1, 0, 0, 1, 431.706, 391)">
+        <tspan x="-5.706" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 449.171, 416)">
-        <tspan x="-23.171" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[1],</tspan>
+        <tspan x="-23.171" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(1),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 464.019, 441)">
-        <tspan x="-38.019" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[2, 1],</tspan>
+        <tspan x="-38.019" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(2, 1),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 478.867, 466)">
-        <tspan x="-52.867" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[1, 2, 1],</tspan>
+        <tspan x="-52.867" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(1, 2, 1),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 493.714, 491)">
-        <tspan x="-67.714" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[1, 2, 1, 1],</tspan>
+        <tspan x="-67.714" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(1, 2, 1, 1),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 508.562, 516)">
-        <tspan x="-82.562" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[1, 2, 1, 1, 1],</tspan>
+        <tspan x="-82.562" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(1, 2, 1, 1, 1),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 523.41, 541)">
-        <tspan x="-97.41" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[1, 2, 1, 1, 1, 1],</tspan>
+        <tspan x="-97.41" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(1, 2, 1, 1, 1, 1),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 534.463, 566)">
-        <tspan x="-108.463" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[1, 2, 1, 1, 1, 1, 9]</tspan>
+        <tspan x="-108.463" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(1, 2, 1, 1, 1, 1, 9)</tspan>
       </text>
-      <text transform="matrix(1, 0, 0, 1, 432.206, 591)">
-        <tspan x="-6.206" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">]</tspan>
+      <text transform="matrix(1, 0, 0, 1, 431.706, 591)">
+        <tspan x="-5.706" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">)</tspan>
       </text>
     </g>
     <text transform="matrix(1, 0, 0, 1, 83.232, 631)">
@@ -533,23 +534,23 @@
       <tspan x="-7.965" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">4</tspan>
     </text>
     <g>
-      <text transform="matrix(1, 0, 0, 1, 816.206, 391)">
-        <tspan x="-6.206" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[</tspan>
+      <text transform="matrix(1, 0, 0, 1, 815.706, 391)">
+        <tspan x="-5.706" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 833.171, 416)">
-        <tspan x="-23.171" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[9],</tspan>
+        <tspan x="-23.171" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(9),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 848.019, 441)">
-        <tspan x="-38.019" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[2, 2],</tspan>
+        <tspan x="-38.019" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(2, 2),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 862.867, 466)">
-        <tspan x="-52.867" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[3, 3, 3],</tspan>
+        <tspan x="-52.867" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(3, 3, 3),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 873.92, 491)">
-        <tspan x="-63.92" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">[4, 4, 4, 4]</tspan>
+        <tspan x="-63.92" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(4, 4, 4, 4)</tspan>
       </text>
-      <text transform="matrix(1, 0, 0, 1, 816.206, 516)">
-        <tspan x="-6.206" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">]</tspan>
+      <text transform="matrix(1, 0, 0, 1, 815.706, 516)">
+        <tspan x="-5.706" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">)</tspan>
       </text>
     </g>
     <text transform="matrix(1, 0, 0, 1, 473.232, 631)">
