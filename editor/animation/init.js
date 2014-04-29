@@ -40,9 +40,12 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             }
 
             var checkioInput = data.in;
+            var checkioInputStr = JSON.stringify(checkioInput).replace(/\[/g, "(").replace(/\]/g, ")");
+            console.log(checkioInputStr);
+            console.log(checkioInput);
 
             if (data.error) {
-                $content.find('.call').html('Fail: checkio(' + JSON.stringify(checkioInput) + ')');
+                $content.find('.call').html('Fail: count_gold(' + checkioInputStr + ')');
                 $content.find('.output').html(data.error.replace(/\n/g, ","));
 
                 $content.find('.output').addClass('error');
@@ -65,20 +68,25 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             $content.find('.output').html('&nbsp;Your result:&nbsp;' + JSON.stringify(userResult));
 
             if (!result) {
-                $content.find('.call').html('Fail: checkio(' + JSON.stringify(checkioInput) + ')');
+                $content.find('.call').html('Fail: count_gold(' + checkioInputStr + ')');
                 $content.find('.answer').html('Right result:&nbsp;' + JSON.stringify(rightResult));
                 $content.find('.answer').addClass('error');
                 $content.find('.output').addClass('error');
                 $content.find('.call').addClass('error');
             }
             else {
-                $content.find('.call').html('Pass: checkio(' + JSON.stringify(checkioInput) + ')');
+                $content.find('.call').html('Pass: count_gold(' + checkioInputStr + ')');
                 $content.find('.answer').remove();
             }
             //Dont change the code before it
-
-            var canvas = new SumInTriangleCanvas(checkioInput, explanation);
-            canvas.createCanvas($content.find(".explanation")[0]);
+            console.log(explanation);
+            if (explanation) {
+                var canvas = new SumInTriangleCanvas(checkioInput, explanation);
+                canvas.createCanvas($content.find(".explanation")[0]);
+            }
+            else {
+                $content.find('.explanation').remove();
+            }
 
 
             this_e.setAnimationHeight($content.height() + 60);
