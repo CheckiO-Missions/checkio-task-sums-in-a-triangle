@@ -275,7 +275,7 @@
         <tspan x="-5.706" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 57.059, 430.022)">
-        <tspan x="-23.171" y="-4.5" font-family="Verdana-Bold" font-size="21" fill="#294270">(1)</tspan>
+        <tspan x="-23.171" y="-4.5" font-family="Verdana-Bold" font-size="21" fill="#294270">(1,)</tspan>
         <tspan x="-23.171" y="20.5" font-family="Verdana-Bold" font-size="21" fill="#294270">	,</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 71.907, 442.522)">
@@ -472,8 +472,8 @@
       <text transform="matrix(1, 0, 0, 1, 431.706, 391)">
         <tspan x="-5.706" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(</tspan>
       </text>
-      <text transform="matrix(1, 0, 0, 1, 449.171, 416)">
-        <tspan x="-23.171" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(1),</tspan>
+      <text transform="matrix(1, 0, 0, 1, 453.25, 428.5)">
+        <tspan x="-27.25" y="-4.5" font-family="Verdana-Bold" font-size="21" fill="#294270">(1,),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 464.019, 441)">
         <tspan x="-38.019" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(2, 1),</tspan>
@@ -537,8 +537,8 @@
       <text transform="matrix(1, 0, 0, 1, 815.706, 391)">
         <tspan x="-5.706" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(</tspan>
       </text>
-      <text transform="matrix(1, 0, 0, 1, 833.171, 416)">
-        <tspan x="-23.171" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(9),</tspan>
+      <text transform="matrix(1, 0, 0, 1, 837.25, 428.5)">
+        <tspan x="-27.25" y="-4.5" font-family="Verdana-Bold" font-size="21" fill="#294270">(9,),</tspan>
       </text>
       <text transform="matrix(1, 0, 0, 1, 848.019, 441)">
         <tspan x="-38.019" y="8" font-family="Verdana-Bold" font-size="21" fill="#294270">(2, 2),</tspan>
