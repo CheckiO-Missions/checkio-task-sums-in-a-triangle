@@ -40,9 +40,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
             }
 
             var checkioInput = data.in;
-            var checkioInputStr = JSON.stringify(checkioInput).replace(/\[/g, "(").replace(/\]/g, ")");
-            console.log(checkioInputStr);
-            console.log(checkioInput);
+            var checkioInputStr = JSON.stringify(checkioInput).replace(/\[/g, "(").replace(/\]/g, ")").replace(/\((\d)\)/, "(\$1,)");
 
             if (data.error) {
                 $content.find('.call').html('Fail: count_gold(' + checkioInputStr + ')');
