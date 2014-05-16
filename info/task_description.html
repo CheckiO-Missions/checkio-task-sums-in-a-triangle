@@ -13,7 +13,7 @@
 
 </p>
 <p>
-    <strong>Hints:</strong>
+    <strong>Tips:</strong>
     Think of each step down to the left as moving to the same index location or to the right as one index location higher.
     Be very careful if you plan to use recursion here.
 </p>
@@ -72,8 +72,8 @@ count_gold((
 
 <p>
     <strong>Precondition: </strong>
-    0 < |pyramid| &le; 20<br>
-    &forall; tuple ∈ pyramid : &forall; x ∈ tuple;  : 0 &lt; x &lt; 10
+    0 < len(pyramid) &le; 20<br>
+    all(all(0 &lt; x &lt; 10 for x in row) for row in pyramid) == True<br>
 </p>
 
 
