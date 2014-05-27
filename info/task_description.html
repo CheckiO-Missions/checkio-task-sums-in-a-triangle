@@ -7,8 +7,8 @@
 </p>
 <p>
     Consider a tuple of tuples in which the first tuple has one integer and each consecutive tuple has one more integer
-    then the last. Such a list of lists would look like a triangle.
-    You should write a program that will help Nikola find the highest possible sum on the most profitable route down the pyramid.
+    then the last. Such a tuple of tuples would look like a triangle.
+    You should write a program that will help Stephan find the highest possible sum on the most profitable route down the pyramid.
     All routes down the pyramid involve stepping down and to the left or down and to the right.
 
 </p>
@@ -30,7 +30,7 @@
          width="380px"/>
 </p>
 
-<p><strong>Input: </strong>A tuple of tuples. Each tuple contains integers.</p>
+<p><strong>Input: </strong>A pyramid as a tuple of tuples. Each tuple contains integers.</p>
 
 <p><strong>Output: </strong>The maximum possible sum as an integer.</p>
 
@@ -72,11 +72,6 @@ count_gold((
 
 <p>
     <strong>Precondition: </strong>
-    0 < |pyramid| &le; 20<br>
-    &forall; tuple ∈ pyramid : &forall; x ∈ tuple;  : 0 &lt; x &lt; 10
-</p>
-
-
-<p>
-    <a href="http://www.checkio.org/mission/sums-in-a-triangle/">[The old version for this task here]</a>
+    0 &lt; len(pyramid) &le; 20<br>
+    all(all(0 &lt; x &lt; 10 for x in row) for row in pyramid)
 </p>
