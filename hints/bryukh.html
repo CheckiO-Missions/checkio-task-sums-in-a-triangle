@@ -1,0 +1,62 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        I have no idea how to start solving this mission
+    </div>
+    <div class="answer">
+        Don't try to use recursion from the top down. Take a look at the pyramid from bottom to up. For each row you can choose the previous best step.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I need some help to proceed with the mission
+    </div>
+    <div class="answer">
+        First you will need to create a work copy list (you'll need mutable data type).
+
+<pre class="brush: python">
+work = list(list(row) for row in pyramid)
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I have gone half way through. Need help!
+    </div>
+    <div class="answer">
+        Now iterate all of the rows going from bottom to top.
+
+<pre class="brush: python">
+for i in range(len(work) - 1, 0 , -1):
+    row = work[i] # we can make this with enumerate also
+    for j in range(len(work[i])):
+        ...
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I am stuck. I need a small hint.
+    </div>
+    <div class="answer">
+        For each step you need to choose the best variant from the lower level and accumulate this.
+
+<pre class="brush: python">
+...
+    ...
+        work[i][j] += max(work[i+1][j], work[i+1][j+1])
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        I tried all I could. Nothing works. SOS
+    </div>
+    <div class="answer">
+        As a result of all this, you will get the best total in the top of the work pyramid.
+
+    </div>
+</div>
+
+
+</body>
