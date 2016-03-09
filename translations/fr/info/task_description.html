@@ -1,0 +1,80 @@
+<p>
+   Notre trio de robots a besoin de s'entraîner pour les prochains voyages et chasses aux trésors.
+   Stephan a construit un modèle spécial de pyramide plane. Les robots peuvent à présent s'entraîner en rapidité
+   pour la ruée vers l'or. Ils commencent au sommet de la pyramide. Ils doivent collecter l'or dans chaque
+   pièce traversée, et continuer leur parcours en descendant au niveau inférieur en choisissant la pièce 
+   de gauche ou de droite. Pour optimiser leur chasse à l'or, Stephan doit connaître la quantité d'or maximale
+   qui peut être collectée en un parcours.
+</p>
+<p>
+    Considérons, pour modéliser la pyramide, un tuple de tuples dont le premier tuple contient un
+	nombre entier, et tous les tuples successifs ont un entier de plus que le précédent. Un tel
+	tuple de tuples ressemble à un triangle.
+	Il faut écrire un programme qui aide Stephan à déterminer la somme maximale qui peut être 
+	obtenue le long d'un chemin qui descend depuis le sommet de la pyramide jusqu'à sa base, 
+	en descendant à chaque étape vers la case à gauche ou la case à droite.
+</p>
+<p>
+    <strong>Indication:</strong>
+	Penser qu'un mouvement vers la pièce en bas à gauche conserve l'indice dans le tuple, 
+	tandis qu'un mouvement vers la pièce en bas à droite augmente l'indice de 1.
+	Prudence si vous envisagez une solution récursive ici.
+</p>
+<p class="for_info_only" style="text-align: center">
+    <img title="sum-in-triangles"
+         src="{{ MEDIA }}sum-in-triangles.png"
+         alt="sum-in-triangles"
+         width="500px"/>
+</p>
+<p class="for_editor_only" style="text-align: center">
+    <img title="sum-in-triangles"
+         src="{{ MEDIA }}sum-in-triangles.png"
+         alt="sum-in-triangles"
+         width="380px"/>
+</p>
+
+<p><strong>Input: </strong>Une pyramide modélisée par un tuple (tuple) de tuples d'entiers (int).</p>
+
+<p><strong>Output: </strong>La somme maximale possible (int).</p>
+
+<div class="for_info_only">
+    <p><strong>Exemple:</strong></p>
+<pre class="brush: python">count_gold((
+    (1,),
+    (2, 3),
+    (3, 3, 1),
+    (3, 1, 5, 4),
+    (3, 1, 3, 1, 3),
+    (2, 2, 2, 2, 2, 2),
+    (5, 6, 4, 5, 6, 4, 3)
+)) == 23
+count_gold((
+    (1,),
+    (2, 1),
+    (1, 2, 1),
+    (1, 2, 1, 1),
+    (1, 2, 1, 1, 1),
+    (1, 2, 1, 1, 1, 1),
+    (1, 2, 1, 1, 1, 1, 9)
+)) == 15
+count_gold((
+    (9,),
+    (2, 2),
+    (3, 3, 3),
+    (4, 4, 4, 4)
+)) == 18
+</pre>
+</div>
+
+
+<p class="for_info_only">
+    <strong>Utilisation: </strong>
+    C'est un problème classique qui illustre l'utilisation de programmation dynamique. Ce concept est au coeur
+	de nombreuses questions d'optimisation.
+</p>
+
+<p>
+    <strong>Précondition: </strong>
+    0 &lt; len(pyramid) &le; 20<br>
+    all(all(0 &lt; x &lt; 10 for x in row) for row in pyramid)
+</p>
