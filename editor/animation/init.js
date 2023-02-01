@@ -39,7 +39,7 @@ requirejs(['ext_editor_1', 'jquery_190', 'raphael_210'],
                 return false;
             }
 
-            var checkioInput = data.in;
+            var checkioInput = data.in[0];
             var checkioInputStr = JSON.stringify(checkioInput).replace(/\[/g, "(").replace(/\]/g, ")").replace(/\((\d)\)/, "(\$1,)");
 
             if (data.error) {
