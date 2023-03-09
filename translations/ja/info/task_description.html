@@ -31,47 +31,26 @@
          width="380px"/>
 </p>
 
-<p><strong>入力: </strong>タプルのタプル形式のピラミッド。各々のタプルは整数値から成ります。</p>
+<p><strong>入力:</strong> タプルのタプル形式のピラミッド。各々のタプルは整数値から成ります。</p>
 
-<p><strong>出力: </strong>合計で得られる最大の整数値。</p>
+<p><strong>出力:</strong> 合計で得られる最大の整数値。</p>
 
 <div class="for_info_only">
     <p><strong>例:</strong></p>
-<pre class="brush: python">count_gold((
-    (1,),
-    (2, 3),
-    (3, 3, 1),
-    (3, 1, 5, 4),
-    (3, 1, 3, 1, 3),
-    (2, 2, 2, 2, 2, 2),
-    (5, 6, 4, 5, 6, 4, 3)
-)) == 23
-count_gold((
-    (1,),
-    (2, 1),
-    (1, 2, 1),
-    (1, 2, 1, 1),
-    (1, 2, 1, 1, 1),
-    (1, 2, 1, 1, 1, 1),
-    (1, 2, 1, 1, 1, 1, 9)
-)) == 15
-count_gold((
-    (9,),
-    (2, 2),
-    (3, 3, 3),
-    (4, 4, 4, 4)
-)) == 18
-</pre>
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 </div>
 
 <p class="for_info_only">
-    <strong>どう使われるか: </strong>
-    これは動的プログラミングの例に使われる古典的な問題です。
-    多くの最適化問題に応用できる基本的なコンセプトです。
+    <strong>どう使われるか:</strong>
+    <i>
+        これは動的プログラミングの例に使われる古典的な問題です。多くの最適化問題に応用できる基本的なコンセプトです。
+    </i>
 </p>
 
 <p>
-    <strong>条件: </strong>
-    0 &lt; len(pyramid) &le; 20<br>
-    all(all(0 &lt; x &lt; 10 for x in row) for row in pyramid)
+    <strong>条件:</strong>
+    <ul>
+        <li><i>0 &lt; len(pyramid) &le; 20;</i></li>
+        <li><i>all(all(0 &lt; x &lt; 10 for x in row) for row in pyramid).</i></li>
+    </ul>
 </p>
