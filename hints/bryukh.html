@@ -27,7 +27,7 @@ work = list(list(row) for row in pyramid)
         Now iterate all of the rows going from bottom to top.
 
 <pre class="brush: python">
-for i in range(len(work) - 1, 0 , -1):
+for i in range(len(work) - 2, -1, -1):
     row = work[i] # we can make this with enumerate also
     for j in range(len(work[i])):
         ...
