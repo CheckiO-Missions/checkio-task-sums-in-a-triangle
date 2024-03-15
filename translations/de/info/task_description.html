@@ -1,0 +1,51 @@
+<p>
+    Unser Robo-Trio muss für zukünftige Reisen und Schatzsuchen trainieren.
+    Stephan hat ein spezielles flaches Modell einer Pyramide gebaut. Jetzt können die Roboter für das schnelle Goldlaufen trainieren.
+    Sie beginnen an der Spitze der Pyramide und müssen in jedem Raum Gold sammeln,
+    sich für den linken oder rechten Weg entscheiden und in die nächste Ebene hinabsteigen.
+    Um ihre Goldläufe zu optimieren, muss Stephan die maximale Menge an Gold kennen, die in einem Lauf gesammelt werden kann.
+</p>
+<p>
+    Betrachten Sie {% if is_js %}ein Array von Arrays{% else %}eine Liste von Listen{% endif %} in der das erste {% if is_js %}Array{% else %}Liste{% endif %} eine {% if is_js %}Anzahl{% else %}ganze Zahl{% endif %} hat und jedes nachfolgende {% if is_js %}Array{% else %}Liste{% endif %} eine {% if is_js %}Anzahl{% else %}ganze Zahl{% endif %} mehr hat als das letzte. Ein solches {% if is_js %}Array von Arrays{% else %}eine Liste von Listen{% endif %} würde wie eine Pyramide aussehen. Sie sollten ein Programm schreiben, das Stephan hilft, die höchstmögliche Summe auf dem profitabelsten Weg die Pyramide hinunter zu finden. Alle Wege in der Pyramide führen nach unten und nach links oder nach unten und nach rechts.
+
+</p>
+<p>
+   <strong>Tipps:</strong>
+    Stellen Sie sich jeden Schritt nach unten links als einen Schritt zur gleichen Indexposition oder nach rechts als eine Indexposition höher vor. Seien Sie sehr vorsichtig, wenn Sie hier eine Rekursion verwenden möchten.
+</p>
+<p class="for_info_only" style="text-align: center">
+    <img title="sum-in-triangles"
+         src="{{ MEDIA }}sum-in-triangles.png"
+         alt="sum-in-triangles"
+         width="500px"/>
+</p>
+<p class="for_editor_only" style="text-align: center">
+    <img title="sum-in-triangles"
+         src="{{ MEDIA }}sum-in-triangles.png"
+         alt="sum-in-triangles"
+         width="380px"/>
+</p>
+
+<p><strong>Eingabe:</strong> Eine Pyramide als {% if is_js %}ein Array von Arrays{% else %}eine Liste von Listen{% endif %} von {% if is_js %}Zahlen{% else %}ganze Zahlen{% endif %}.</p>
+
+<p><strong>Ausgabe:</strong> Die maximal mögliche Summe in Form einer ganzen Zahl.</p>
+
+<div class="for_info_only">
+    <p><strong>Beispiele:</strong></p>
+    <pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>Wie es verwendet wird:</strong>
+    <i>
+        dies ist ein klassisches Problem, das Ihnen zeigt, wie Sie die dynamische Programmierung einsetzen können. Dieses Konzept ist ein zentraler Bestandteil vieler Optimierungsaufgaben.
+    </i>
+</p>
+
+<p>
+    <strong>Vorbedingungen:</strong>
+    <ul>
+        <li><i>0 &lt; len(pyramid) &le; 20;</i></li>
+        <li><i>all(all(0 &lt; x &lt; 10 für x in Zeile) für Zeile in Pyramide).</i></li>
+    </ul>
+</p>
