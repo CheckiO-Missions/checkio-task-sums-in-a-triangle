@@ -1,0 +1,61 @@
+<body data-author="bryukh">
+<div class="question-answer">
+    <div class="question">
+        Ich habe keine Ahnung, wie ich mit der Lösung dieser Mission beginnen soll
+    </div>
+    <div class="answer">
+        Versuchen Sie nicht, die Rekursion von oben nach unten zu verwenden. Schauen Sie sich die Pyramide von unten nach oben an. Für jede Zeile können Sie den vorherigen besten Schritt wählen.
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich brauche Hilfe, um mit der Mission fortzufahren
+    </div>
+    <div class="answer">
+        Zunächst müssen Sie eine Arbeitskopierliste erstellen (Sie benötigen einen veränderbaren Datentyp).
+
+<pre class="brush: python">
+work = list(list(row) for row in pyramid)
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich habe die Hälfte des Weges hinter mir. Brauche Hilfe!
+    </div>
+    <div class="answer">
+        Iterieren Sie nun alle Zeilen von unten nach oben.
+
+<pre class="brush: python">
+for i in range(len(work) - 2, -1, -1):
+    for j in range(len(work[i])):
+        ...
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich komme nicht weiter. Ich brauche einen kleinen Tipp.
+    </div>
+    <div class="answer">
+        Für jeden Schritt müssen Sie die beste Variante aus der unteren Ebene wählen und diese sammeln.
+
+<pre class="brush: python">
+...
+    ...
+        work[i][j] += max(work[i+1][j], work[i+1][j+1])
+</pre>
+    </div>
+</div>
+<div class="question-answer">
+    <div class="question">
+        Ich habe alles Mögliche versucht. Nichts funktioniert. SOS
+    </div>
+    <div class="answer">
+        Als Ergebnis von all dem erhalten Sie die beste Summe an der Spitze der Arbeitspyramide.
+
+    </div>
+</div>
+
+
+</body>
